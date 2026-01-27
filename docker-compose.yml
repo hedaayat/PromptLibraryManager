@@ -1,0 +1,7 @@
+services:
+  pl:
+    build: .
+    volumes:
+      - ./prompt-library:/app/prompt-library
+      - ./config.yaml:/app/config.yaml
+    entrypoint: ["./pl"]

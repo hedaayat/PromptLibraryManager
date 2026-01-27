@@ -1,0 +1,45 @@
+id: 6a6f6b96-39e7-4b18-9f0e-41d9a1a3b5a4
+slug: linkedin-post
+title: Write LinkedIn Post
+description: Create a LinkedIn post with a clear hook and CTA.
+tags:
+  - linkedin
+  - writing
+template: |
+  Write a LinkedIn post about {{topic}}.
+  Audience: {{audience}}
+  Tone: {{tone}}
+  Goal: {{goal}}
+  Key points: {{key_points}}
+  Include a short CTA at the end.
+variables:
+  - key: topic
+    label: Topic
+    type: string
+    required: true
+  - key: audience
+    label: Audience
+    type: string
+    required: true
+  - key: tone
+    label: Tone
+    type: enum
+    options:
+      - professional
+      - conversational
+      - inspirational
+    required: true
+  - key: goal
+    label: Goal
+    type: text
+    required: true
+  - key: key_points
+    label: Key Points
+    type: text
+    required: true
+presets:
+  - name: Professional Update
+    values:
+      tone: professional
+createdAt: 2026-01-25T00:00:00Z
+updatedAt: 2026-01-25T00:00:00Z

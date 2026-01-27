@@ -1,0 +1,27 @@
+id: 0c1f7b2a-3f62-4db1-9b63-4b0aab4e7c18
+slug: web-search-analysis
+title: Web Search Analysis
+description: Analyze web research and produce a concise brief.
+tags:
+  - research
+  - analysis
+template: |
+  You are an analyst. Summarize the following sources and answer the question.
+  Question: {{question}}
+  Sources:
+  {{sources}}
+  Provide: key findings, contradictions, and a concise recommendation.
+variables:
+  - key: question
+    label: Question
+    type: text
+    required: true
+  - key: sources
+    label: Sources
+    type: text
+    required: true
+presets:
+  - name: Executive Brief
+    values: {}
+createdAt: 2026-01-25T00:00:00Z
+updatedAt: 2026-01-25T00:00:00Z

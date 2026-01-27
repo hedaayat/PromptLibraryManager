@@ -1,0 +1,27 @@
+id: 4ce2b7b6-2f0f-48a6-8a25-9395f0b775f0
+slug: context-qa
+title: Answer with Context
+description: Answer a question using provided context.
+tags:
+  - qa
+  - context
+template: |
+  Use the following context to answer the question.
+  Context:
+  {{context}}
+  Question: {{question}}
+  Provide a clear, direct answer and cite the context.
+variables:
+  - key: context
+    label: Context
+    type: text
+    required: true
+  - key: question
+    label: Question
+    type: text
+    required: true
+presets:
+  - name: Direct Answer
+    values: {}
+createdAt: 2026-01-25T00:00:00Z
+updatedAt: 2026-01-25T00:00:00Z

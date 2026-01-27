@@ -1,0 +1,40 @@
+id: 39a5fb40-bf4b-4cf6-b3ae-34c3b87ed87e
+slug: reply-email
+title: Reply to Email
+description: Draft a reply based on an incoming email and desired tone.
+tags:
+  - email
+  - writing
+template: |
+  You are an assistant. Write a reply to the email below.
+  Email: {{incoming_email}}
+  Desired tone: {{tone}}
+  Goal: {{goal}}
+  Additional context: {{context}}
+variables:
+  - key: incoming_email
+    label: Incoming Email
+    type: text
+    required: true
+  - key: tone
+    label: Tone
+    type: enum
+    options:
+      - formal
+      - friendly
+      - concise
+    required: true
+  - key: goal
+    label: Goal
+    type: text
+    required: true
+  - key: context
+    label: Context
+    type: text
+    required: false
+presets:
+  - name: Friendly Reply
+    values:
+      tone: friendly
+createdAt: 2026-01-25T00:00:00Z
+updatedAt: 2026-01-25T00:00:00Z

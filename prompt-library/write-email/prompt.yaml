@@ -1,0 +1,43 @@
+id: 1e2f0f6b-9a58-4e6f-bf7c-9b6a5b01c9c1
+slug: write-email
+title: Write Email
+description: Draft a professional email based on context and goal.
+tags:
+  - email
+  - writing
+template: |
+  You are an assistant. Write an email to {{recipient}} about {{topic}}.
+  Tone: {{tone}}
+  Goal: {{goal}}
+  Context: {{context}}
+variables:
+  - key: recipient
+    label: Recipient
+    type: string
+    required: true
+  - key: topic
+    label: Topic
+    type: string
+    required: true
+  - key: tone
+    label: Tone
+    type: enum
+    options:
+      - formal
+      - friendly
+      - concise
+    required: true
+  - key: goal
+    label: Goal
+    type: text
+    required: true
+  - key: context
+    label: Context
+    type: text
+    required: false
+presets:
+  - name: Formal Client
+    values:
+      tone: formal
+createdAt: 2026-01-25T00:00:00Z
+updatedAt: 2026-01-25T00:00:00Z
