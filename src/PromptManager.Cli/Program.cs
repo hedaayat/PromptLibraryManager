@@ -13,11 +13,11 @@ app.Configure(config =>
 
     config.AddCommand<PromptShowCommand>("show")
         .WithDescription("Show a prompt")
-        .WithExample(["show", "write-email"]);
+        .WithExample(new[] { "show", "write-email" });
 
     config.AddCommand<PromptRunCommand>("run")
         .WithDescription("Run a prompt")
-        .WithExample(["run", "write-email"]);
+        .WithExample(new[] { "run", "write-email" });
 
     config.AddCommand<SettingsShowCommand>("settings")
         .WithDescription("Show current settings");

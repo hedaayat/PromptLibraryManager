@@ -8,7 +8,7 @@ public sealed class PromptShowCommand : Command<PromptShowCommand.Settings>
 {
     public sealed class Settings : CommandSettings
     {
-        [CommandArgument(0, "slug")]
+        [CommandArgument(0, "<slug>")]
         public string Slug { get; init; } = string.Empty;
     }
 
